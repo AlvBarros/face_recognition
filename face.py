@@ -6,6 +6,8 @@ face_cascade = cv.CascadeClassifier('haarcascade_frontalface_default.xml')
 txtfiles = [] 
 for file in glob.glob("faces/*.jpg"):
     txtfiles.append(file)
+for file in glob.glob("faces/*.jpeg"):
+    txtfiles.append(file)
 
 print('Total files', len(txtfiles))
 
